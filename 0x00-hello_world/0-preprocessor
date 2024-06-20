@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E input.c -o output.i
+export CFILE=main.c ./preprocess.sh
