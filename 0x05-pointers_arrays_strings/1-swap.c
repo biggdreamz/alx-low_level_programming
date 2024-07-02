@@ -2,9 +2,13 @@
 #include <stdio.h>
 
 /**
- * main - check the code 
+ * swap_int - Swaps the values of two integers.
  *
- * Return: Always 0.
+ * @a: Pointer to the first integer.
+ * @b: Pointer to the second integer.
+ *
+ * Description: Takes two pointers to integers as parameters and swaps
+ * the values they point to.
  */
 void swap_int(int *a, int *b)
 {
