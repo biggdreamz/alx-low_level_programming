@@ -9,6 +9,7 @@
  *
  * Description: Takes two pointers to integers as parameters and swaps
  * the values they point to.
+ * return: void
  */
 void swap_int(int *a, int *b)
 {
