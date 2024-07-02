@@ -6,7 +6,7 @@
  *
  * @n: Pointer to an integer to be updated.
  *
- * Description: Takes a pointer to an integer as parameter and updates
+ * Description: Takes a pointer to an integer as parameter and updates.
  *
  * the value it points to to 98.
  *
