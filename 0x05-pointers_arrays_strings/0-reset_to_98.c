@@ -2,8 +2,8 @@
 #include <stdio.h>
 
  /**
- *funtion for reset_to_98
- *@n: pointer to an int.
+ * reset_to_98 - Updates the value of the int it points to to 98.
+ * @n: Pointer to an int.
  */
 void reset_to_98(int *n)
 {
