@@ -7,5 +7,8 @@
  */
 void reset_to_98(int *n)
 {
+/**
+ * parameter for n
+ */
 	*n = 98;
 }
