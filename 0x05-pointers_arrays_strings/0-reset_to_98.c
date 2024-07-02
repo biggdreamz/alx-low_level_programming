@@ -3,7 +3,7 @@
 
  /**
  *funtion for reset_to_98
- *Description: parameter for n
+ *@n: pointer to an int.
  */
 void reset_to_98(int *n)
 {
