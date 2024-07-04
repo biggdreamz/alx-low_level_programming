@@ -12,7 +12,8 @@ char *cap_string(char *str)
 	char *ptr = str;
 	int capitalize_next = 1;
 
-	while (*ptr != '\0') {
+	while (*ptr != '\0')
+	{
 		if (*ptr >= 'a' && *ptr <= 'z')
 		{
 			if (capitalize_next)
@@ -20,13 +21,15 @@ char *cap_string(char *str)
 				*ptr = *ptr - 'a' + 'A';
 				capitalize_next = 0;
 			}
-		} else {
-			capitalize_next = 0;
-			if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' || *ptr == '-' || *ptr == '.')
+		} 
+			else
 			{
+			capitalize_next = 0;
+				if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' || *ptr == '-' || *ptr == '.')
+				{
 				capitalize_next = 1;
+				}
 			}
-		}
 		ptr++;
 	}
 
