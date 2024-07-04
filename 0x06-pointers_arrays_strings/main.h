@@ -30,4 +30,5 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
 char *_strcat(char *dest, const char *src);
+char *_strncat(char *dest, const char *src, int n);
 #endif
