@@ -7,7 +7,7 @@
  *
  * Return: Pointer to the modified string.
  */
-char *cap_string(char *str)
+char *cap_string(char *)
 {
 	char *ptr = str;
 	int capitalize_next = 1;
