@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_line - prints a s bytes of a buffer
+ * print_buffer - prints a s bytes of a buffer
  * @c: buffer to print
  * @s: bytes of buffer to print
  * @l: line of buffer to print
@@ -10,7 +10,7 @@
  * Return: void
  */
 
-void print_line(char *c, int s, int l)
+void print_buffer(char *c, int s, int l)
 {
 	int j, k;
 
