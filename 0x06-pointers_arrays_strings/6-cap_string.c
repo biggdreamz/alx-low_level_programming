@@ -10,7 +10,7 @@
 char *cap_string(char *str)
 {
 	char *ptr = str;
-	int capitalize_next = 1;  // Flag to indicate next character should be capitalized
+	int capitalize_next = 1;
 
 	while (*ptr != '\0')
 	{
