@@ -10,7 +10,7 @@
  * Return: void
  */
 
-void print_buffer(char *c, int s, int l)
+void print_buffer(char *b, int size)
 {
 	int j, k;
 
