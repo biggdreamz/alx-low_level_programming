@@ -21,7 +21,7 @@ char *cap_string(char *str)
 				*ptr = *ptr - 'a' + 'A';
 				capitalize_next = 0;
 				}
-		} else 
+		} else
 			{
 			capitalize_next = 0;
 			if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
