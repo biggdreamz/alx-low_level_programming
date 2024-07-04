@@ -21,7 +21,7 @@ char *cap_string(char *str)
 				*ptr = *ptr - 'a' + 'A';
 				capitalize_next = 0;
 			}
-		} 
+		}
 			else
 			{
 			capitalize_next = 0;
