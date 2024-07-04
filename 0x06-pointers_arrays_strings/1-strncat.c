@@ -1,31 +1,27 @@
-#include <stdio.h>
 #include "main.h"
 
-/* Prototype of the _strncat function */
 /**
- * _strncat - Concatenates up to n characters from the source string
- *            to the destination string.
- * @dest: Pointer to the destination string.
- * @src: Pointer to the source string.
- * @n: Maximum number of characters to be appended from src.
+ * _strncat - concatenates two strings
  *
- * Return: Pointer to the resulting string `dest`.
+ * @src: The source of strings
+ * @dest: The destination of the string
+ * @n: The length of int
+ *
+ * Return: pointer to the resulting string dest
  */
-char *_strncat(char *dest, const char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	int dest_len = 0;
-	int i;
+	int i, j;
 
-	while (dest[dest_len] != '\0')
+	for (i = 0; dest[i] != '\0'; i++)
 	{
-		dest_len++;
+		continue;
 	}
-
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	for (j = 0; src[j] != '\0' && j < n; j++)
 	{
-		dest[dest_len + i] = src[i];
+		dest[i + j] = src[j];
 	}
-	dest[dest_len + i] = '\0';
-
+	dest[i + j] = '\0';
 	return (dest);
+}
 	
