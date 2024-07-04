@@ -11,7 +11,6 @@ char *leet(char *str)
 {
 	char *ptr = str;
 	char leet_map[256] = {0};
-	int i;
 
 	leet_map['a'] = '4'; leet_map['A'] = '4';
 	leet_map['e'] = '3'; leet_map['E'] = '3';
