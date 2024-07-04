@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strncat - concatenates two strings
@@ -24,4 +25,3 @@ char *_strncat(char *dest, char *src, int n)
 	dest[i + j] = '\0';
 	return (dest);
 }
-	
