@@ -21,7 +21,8 @@ char *cap_string(char *str)
 				*ptr = *ptr - 'a' + 'A';
 				capitalize_next = 0;
 				}
-		} else {
+		} else 
+			{
 			capitalize_next = 0;
 			if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
 				*ptr == ',' || *ptr == ';' || *ptr == '.' || *ptr == '!' ||
@@ -30,7 +31,7 @@ char *cap_string(char *str)
 				{
 				capitalize_next = 1;
 				}
-		}
+			}
 		ptr++;
 	}
 
