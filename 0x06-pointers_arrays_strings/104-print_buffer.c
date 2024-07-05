@@ -21,11 +21,11 @@ void print_buffer(char *b, int size)
 	}
 
 	int i;
-	int j;
 	unsigned char c;
 
 	for (i = 0; i < size; i += 10)
 	{
+		int j;
 		printf("%08x: ", i);
 
 		for (j = 0; j < 10; j++)
