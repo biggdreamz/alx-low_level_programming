@@ -20,7 +20,8 @@ void print_buffer(char *b, int size)
 		return;
 	}
 
-	int i, j;
+	int i;
+	int j;
 	unsigned char c;
 
 	for (i = 0; i < size; i += 10)
