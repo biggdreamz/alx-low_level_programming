@@ -12,6 +12,7 @@ void print_all(const char * const format, ...)
 	va_list arguments;
 	int i = 0;
 	char *s;
+	char *separator = "";
 
 	va_start(arguments, format);
 
@@ -20,29 +21,35 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%c", va_arg(arguments, int));
+				printf("%s%c", separator, va_arg(arguments, int));
 				break;
 			case 'i':
-				printf("%d", va_arg(arguments, int));
+				printf("%s%d", separator, va_arg(arguments, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(arguments, double));
+				printf("%s%f", separator, va_arg(arguments, double));
 				break;
 			case 's':
 				s = va_arg(arguments, char *);
 				if (s == NULL)
-					printf("(nil)");
+					printf("%s(nil)", separator);
 				else
-					printf("%s", s);
+					printf("%s%s", separator, s);
 				break;
 			default:
-				break;
+				i++;
+				continue;
 		}
+		separator = ", ";
 		i++;
-		if (format[i])
-			printf(", ");
 	}
 
 	va_end(arguments);
 	printf("\n");
+}
+
+int main(void)
+{
+	print_all("ceis", 'B', 3, "stSchool");
+	return (0);
 }
