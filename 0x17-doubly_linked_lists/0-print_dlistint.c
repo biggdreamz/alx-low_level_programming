@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* print_distint - print all the elements of a distint_t list
+* print_dlistint - print all the elements of a distint_t list
 * * @h: pointer to the start of the linked list
 *
 * Return: number of nodes
