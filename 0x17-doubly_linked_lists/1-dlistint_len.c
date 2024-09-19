@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * print_dlistint - prints all the elements of a doubly linked list
- * @h: pointer to the head of the doubly linked list
+ * dlistint_len - Counts the number of nodes in a doubly linked list
+ * @h: Pointer to the beginning of the doubly linked list
  *
- * Return: the number of nodes in the list
+ * Return: Number of nodes in the linked list
  */
 size_t dlistint_len(const dlistint_t *h)
 {
